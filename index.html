@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boutique 501</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="top">
+  <h1>Boutique 501</h1>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+  <div class="slides">
+
+    <div class="slide">
+      <img src="501/capture.png" alt="Chaussure gris rouge">
+      <p class="img-desc">Jordan 4 – Gris / Rouge</p>
+    </div>
+
+    <div class="slide">
+      <img src="501/capture1.png" alt="Chaussure blanc bleu">
+      <p class="img-desc">Jordan 4 – Blanc / Bleu</p>
+    </div>
+
+    <div class="slide">
+      <img src="501/capture5.png" alt="Chaussure blanc noir">
+      <p class="img-desc">Jordan 4 – Blanc / Noir</p>
+    </div>
+
+  </div>
+</div>
+
+<main class="container">
+
+  <div class="price">— دج</div>
+
+  <div class="form-group">
+    <label>الاسم</label>
+    <input id="firstname">
+  </div>
+
+  <div class="form-group">
+    <label>اللقب</label>
+    <input id="lastname">
+  </div>
+
+  <div class="form-group">
+    <label>رقم الهاتف</label>
+    <input id="phone" placeholder="05xxxxxxxx">
+  </div>
+
+  <div class="form-group">
+    <label>المقاس</label>
+    <div class="sizes">
+      <label><input type="radio" name="size" value="XS">XS</label>
+      <label><input type="radio" name="size" value="S">S</label>
+      <label><input type="radio" name="size" value="M">M</label>
+      <label><input type="radio" name="size" value="L">L</label>
+      <label><input type="radio" name="size" value="XL">XL</label>
+      <label><input type="radio" name="size" value="XXL">XXL</label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>الولاية</label>
+    <select id="wilaya" onchange="loadBaladiya()"></select>
+  </div>
+
+  <div class="form-group">
+    <label>البلدية</label>
+    <select id="baladiya"></select>
+  </div>
+
+  <button onclick="sendWhatsApp()">اطلب الآن عبر واتساب</button>
+
+</main>
+
+</body>
+</html>
